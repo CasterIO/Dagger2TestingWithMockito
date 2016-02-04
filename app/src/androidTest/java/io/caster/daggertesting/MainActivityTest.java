@@ -48,7 +48,7 @@ public class MainActivityTest {
         // Set up the stub we want to return in the mock
         Forecast forecastStub = new Forecast();
         Currently currentlyStub = new Currently();
-        currentlyStub.setIcon("Raining Cats and Dogs!");
+        currentlyStub.setIcon("dogs and cats");
         forecastStub.setCurrently(currentlyStub);
 
         // Set up the mock
@@ -58,7 +58,7 @@ public class MainActivityTest {
         main.launchActivity(new Intent());
 
         // Check that the view is what we expect it to be
-        onView(withId(R.id.current_forecast)).check(matches(withText("Raining Cats and Dogs!")));
+        onView(withId(R.id.current_forecast)).check(matches(withText("dogs and cats")));
     }
 }
 

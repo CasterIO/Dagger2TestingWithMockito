@@ -14,7 +14,8 @@ public class DemoApplication extends Application {
     }
 
     public DemoComponent createComponent() {
-        return DaggerApplicationComponent.builder().demoModule(new DemoModule()).build();
+        return DaggerApplicationComponent.builder()
+                .demoModule(new DemoModule()).build();
     }
 
     public DemoComponent getComponent() {
