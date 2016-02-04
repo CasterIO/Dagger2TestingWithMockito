@@ -29,6 +29,9 @@ dependencies {
     apt 'com.google.dagger:dagger-compiler:2.0.2'
     provided 'javax.annotation:jsr250-api:1.0'
 
+    // HTTP Communication
+    compile 'com.squareup.retrofit:retrofit:1.9.0'
+
     // Instrumetation Tests
     androidTestCompile 'com.android.support.test:runner:0.4.1'
     // Set this dependency to use JUnit 4 rules

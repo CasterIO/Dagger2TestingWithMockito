@@ -11,7 +11,8 @@
     tools:context="io.caster.daggertesting.MainActivity">
 
     <TextView
+        android:id="@+id/current_forecast"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+        />
 </RelativeLayout>
